@@ -1,4 +1,9 @@
 #!/bin/bash
-SCRIPT="realpath $0"
-SCRIPTPATH="dirname $SCRIPT"
+currentDir=$(
+cd $(dirname "$0")
+pwd
+)
+echo -n "current"
+pwd
+echo script $currentDir
 
