@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "$PATH"
+SCRIPT="realpath $0"
+SCRIPTPATH="dirname $SCRIPT"
+
